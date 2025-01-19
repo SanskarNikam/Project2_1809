@@ -1,0 +1,207 @@
+/* Dashboard Container */
+.dashboard-container {
+  text-align: center; /* Centers the content horizontally */
+  padding: 3rem;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif; /* Default font for the dashboard */
+}
+
+/* Title Styling with Color-Changing Animation */
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #ff6a00, #ee0979, #4b6cb7, #182848);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  animation: colorChange 5s linear infinite;
+  margin-bottom: 2rem;
+}
+
+/* Color Change Animation */
+@keyframes colorChange {
+  0% {
+    background-position: 200% center;
+  }
+  50% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Filters Section */
+.filters-container {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.filters-container label {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.filters-container select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Chart Container */
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.chart-container canvas {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Performance Table Styling */
+.performance-table {
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+
+.performance-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.performance-table th,
+.performance-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.performance-table th {
+  background-color: #4b6cb7;
+  color: white;
+}
+
+.performance-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Leaderboard Styling */
+.leaderboard-container {
+  margin: 2rem 0;
+}
+
+.leaderboard-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.leaderboard-container th,
+.leaderboard-container td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.leaderboard-container th {
+  background-color: #ff6a00;
+  color: white;
+}
+
+.leaderboard-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Team Challenges Section */
+.challenges-container {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.challenge {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+
+.challenge h4 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.challenge p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Custom Report Section */
+.custom-report {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.custom-report h3 {
+  font-size: 1.5rem;
+  color: #4b6cb7;
+  margin-bottom: 1rem;
+}
+
+.custom-report ul {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-report li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Buttons */
+button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #4b6cb7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #182848;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .chart-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .challenges-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .performance-table table,
+  .leaderboard-container table {
+    font-size: 0.9rem;
+  }
+}

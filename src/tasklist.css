@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Task List Container */
+  .tasklist-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tasklist-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #182848;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Task Item Styling */
+  .task-item {
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  .task-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .task-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .task-title:hover{
+    color: rgb(218, 186, 227);
+  }
+  
+  .task-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .task-time,
+  .task-category,
+  .task-timestamp {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    /* text-align: justify; */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tasklist-container {
+      padding: 1.5rem;
+    }
+  
+    .tasklist-title {
+      font-size: 1.8rem;
+    }
+  
+    .task-item {
+      padding: 1rem;
+    }
+  
+    .task-title {
+      font-size: 1.2rem;
+    }
+  
+    .task-description,
+    .task-time,
+    .task-category,
+    .task-timestamp {
+      font-size: 0.9rem;
+    }
+  }
+  
